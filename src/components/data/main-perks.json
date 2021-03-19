@@ -1,0 +1,108 @@
+{
+    "clothing4": {
+        "single_perk": true,
+        "share_source":false,
+        "perk" : {
+            "name": "Fashion",
+            "id": "clothing4",
+            "origin": "High School of the Dead",
+            "cost": 200,
+            "description": "Your clothing and entire body acquire defensive properties equal to the most superior protective items you have currently equipped. Emphasis on protective item­ an iron or steel ring won’t give you metal­tough skin­ the minimum is things like knee pads from extreme sports, helmets­ even an apron would count, though all that’d do is protect you from the dangers of a kitchen...",
+            "domain": "Clothing",
+            "extra_perks": [],
+            "companion_perks": [],
+            "jumpchain": "https://drive.google.com/file/d/1K-aRfrGcQeaXP0zQgt6JKJRRXK20NVUt/view?usp=sharing",
+            "picture": "N/A"
+        }
+    },
+    "quality4": {
+        "single_perk": true,
+        "share_source": true,
+        "perk" : {
+            "name": "Bling of War",
+            "id": "quality4",
+            "origin": "Macross",
+            "cost": 100,
+            "description": "It's one thing to have a weapon or vehicle of mass destruction, capable of rending an entire ground force or a squadron to shame. It's another to make it look so damn good your enemies would not dare get near it if they had a lick of sense. By purchasing this perk, you can design your equipment to look much more stylish and carry a 'theme' you prefer. This can range from the clothes you wear, to the weapons you wield, to even the vehicles you pilot into battle. It's all about style.",
+            "domain": "Quality",
+            "extra_perks": [],
+            "companion_perks": [],
+            "jumpchain": "https://drive.google.com/file/d/1y674IkgtX6aC-8Pd3BkvcY_l4feGMjGM/view?usp=sharing",
+            "picture": "N/A"
+        }
+    },
+    "size4": {
+        "single_perk": true,
+        "share_source": false,
+        "perk" : {
+            "name": "Tinkerer",
+            "id": "size4",
+            "origin": "RWBY",
+            "cost": 300,
+            "description": "You're a whiz at maintaining, modifying and making things. Everything from Sniper Scythes to Toaster Ovens, as long as you made it yourself or had the blueprints on hand. Unlock the secret of Variable Weapon Crafting.",
+            "domain": "Size",
+            "extra_perks": [
+                {
+                    "name": "Aura",
+                    "origin": "RWBY",
+                    "cost": 0,
+                    "description": "You start off with an unlocked aura."
+                },
+                {
+                    "name": "Dust",
+                    "origin": "RWBY",
+                    "cost": 0,
+                    "description": "Dust comes in four basic types: red fire, blue ice, green wind and yellow energy. They can be combined to make new variations.\n\nAfter this jump, small amounts of Dust will appear in the Warehouse weekly. Enough for a firefight or two at once. Dust augmentation is found to increase the effectiveness of weaponry and ammunition."
+                },
+                {
+                    "name": "Variable Weapon",
+                    "origin": "RWBY",
+                    "cost": 0,
+                    "description": "It's a thing that turns into another thing! One gun and one melee weapon, together at last."
+                },
+                {
+                    "name": "Scroll",
+                    "origin": "RWBY",
+                    "cost": 0,
+                    "description": "Think a smartphone, with terrible wilderness reception, video camera, messaging and more! Practically a passport for civilized society."
+                }
+            ],
+            "companion_perks": [],
+            "jumpchain": "https://drive.google.com/file/d/1ROAvzMdP2gND_gzctJN0hZZP9rak08Mv/view?usp=sharing",
+            "picture": "N/A"
+        }
+    },
+    "vehicles4": {
+        "single_perk": true,
+        "share_source": true,
+        "perk" : {
+            "name": "Titan Engineering",
+            "id": "vehicles4",
+            "origin": "Titanfall",
+            "cost": 100,
+            "description": "Titans are incredibly complex machines, and due to the disposable nature of their use and production, and not designed for easy repair. You've got the deft touch though, and know exactly where to tweak and shore up the structure to keep it purring like it's fresh out of the drop pod for years.",
+            "domain": "Vehicles",
+            "extra_perks": [],
+            "companion_perks": [],
+            "jumpchain": "https://drive.google.com/file/d/10_JlHyoKjTT94NT0l1wKC3F2e6NrpAf8/view?usp=sharing",
+            "picture": "N/A"
+        }
+    },
+    "magic1": {
+        "single_perk": true,
+        "share_source": true,
+        "perk" : {
+            "name": "Artificer",
+            "id": "magic1",
+            "origin": "Masters of Magic",
+            "cost": 200,
+            "description": "You begin the game already knowing the magics to create enchanted items (other wizards can eventually acquire them) and artifacts. Additionally, these items cost half as much for you to make, and take half the time. This allows you to equip heros you hire in the early game. In future jumps, this will provide a slight boost to the creation time and a reduction to the creation cost of magical items.",
+            "domain": "Magic",
+            "extra_perks": [],
+            "companion_perks": [],
+            "jumpchain": "https://drive.google.com/file/d/1zKBELrxs0tm4pxaiLIfH2-OGc4wUZUMC/view?usp=sharing",
+            "picture": "N/A"
+        }
+    }
+    
+}
