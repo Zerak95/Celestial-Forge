@@ -5,16 +5,23 @@ import Aux from '../../hoc/Aux'
 
 
 const perk = (props) => {
-    console.log(props.origin);
+    // console.log(props.origin);
+    let perk = null
+
+    if(props.data !== null){
+        perk = (
+            <Aux>
+                <div className='Perk'>
+                    <Header size={2} >{props.data.name}</Header>
+                    <Header size={3} >{props.data.origin}   ({props.data.cost}cp)</Header>
+                    <p>{props.data.description}</p>
+                </div>
+                {props.children}
+            </Aux>
+        )
+    }
     return (
-        <Aux>
-            <div className='Perk'>
-                <Header size={2} >{props.name}</Header>
-                <Header size={3} >{props.origin}   ({props.cost}cp)</Header>
-                <p>{props.content}</p>
-            </div>
-            {props.children}
-        </Aux>
+        perk
     )
 }
 
