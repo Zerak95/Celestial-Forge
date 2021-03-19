@@ -1,8 +1,10 @@
 import './App.css';
+
 import Layout from './components/Layout/Layout';
+import AllPerks from './containers/AllPerks/AllPerks';
 
 //TODO: Remove this as its temporary
-import Perk from './components/Perk/Perk' 
+// import Perk from './components/Perk/Perk' 
 
 function App() {
   return (
@@ -11,19 +13,20 @@ function App() {
 
       </div>
       <Layout>
-        <Perk 
+        <AllPerks/>
+        {/* <Perk 
           name='Tinkerer'
           origin='RWBY'
           cost='300'
-          content="You're a whiz at maintaining, modifying and making things. Everything from Sniper Scyfles to Toaster Ovens, as long as you made it yourself or had the blueprints on hand. Unlock the secret of Variable Weapon Crafting"
+          description="You're a whiz at maintaining, modifying and making things. Everything from Sniper Scyfles to Toaster Ovens, as long as you made it yourself or had the blueprints on hand. Unlock the secret of Variable Weapon Crafting"
         >
           <Perk
             name='Aura'
             origin='RWBY'
             cost='0'
-            content="You start off with an unlocked aura."
+            description="You start off with an unlocked aura."
           />
-        </Perk>
+        </Perk> */}
       </Layout>
     </div>
   );
