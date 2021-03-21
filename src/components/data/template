@@ -1,8 +1,9 @@
 // template
 
-{
+,
+"": {
     "single_perk": true,
-    "share_source": false,
+    "share_origin": false,
     "perk" : {
         "name": "",
         "id": "",

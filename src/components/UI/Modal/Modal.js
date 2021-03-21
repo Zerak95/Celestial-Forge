@@ -24,6 +24,9 @@ class Modal extends Component {
                         transform: this.props.show ? 'translateY(0)' : 'translateY(-100vh)',
                         opacity: this.props.show ? '1' : '0'
                     }}>
+                        <button id="x" onClick={this.props.modalClosed}>
+                            X
+                        </button>
                     {this.props.children}
                 </div>
             </Aux>
