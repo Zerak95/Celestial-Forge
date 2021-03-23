@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 import Aux from '../../hoc/Aux';
 import Perk from '../../components/Perk/Perk';
-// import perkData from '../../components/data/main-perks.json';
+import perkData from '../../components/data/main-perks.json';
 import PerkList from '../../components/PerkList/PerkList';
 import Modal from '../../components/UI/Modal/Modal';
 import Backdrop from '../../components/UI/Backdrop/Backdrop';
 
 //TODO: delete this before launch [just for testing]
-import perkData from '../../components/data/test.json';
+// import perkData from '../../components/data/test.json';
 
 class AllPerks extends Component {
     state = {
