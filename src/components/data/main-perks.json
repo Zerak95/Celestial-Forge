@@ -315,6 +315,8 @@
         "domain": "Alchemy",
         "extra_perks": [
             {
+                "single_perk": true,
+                "share_origin": false,
                 "name": "Simple Formulae",
                 "id": "alchemy23-a",
                 "origin": "Full Metal Alchemist",
@@ -325,6 +327,8 @@
                 "picture": "N/A"
             },
             {
+                "single_perk": true,
+                "share_origin": false,
                 "name": "Advanced Formulae",
                 "id": "alchemy23-b",
                 "origin": "Full Metal Alchemist",
@@ -335,6 +339,8 @@
                 "picture": "N/A"
             },
             {
+                "single_perk": true,
+                "share_origin": false,
                 "name": "Alkahestry",
                 "id": "alchemy23-c",
                 "origin": "Full Metal Alchemist",
@@ -345,6 +351,8 @@
                 "picture": "N/A"
             },
             {
+                "single_perk": true,
+                "share_origin": false,
                 "name": "Truth",
                 "id": "alchemy23-d",
                 "origin": "Full Metal Alchemist",
