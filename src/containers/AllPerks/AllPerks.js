@@ -25,9 +25,7 @@ class AllPerks extends Component {
         this.setState({selectedPerk: null, showPerk: false});
     }
 
-    randomPerkHandler = (listOfPerks = Object.values(perkData)) => {
-
-        console.log(listOfPerks);
+    randomPerkHandler = (listOfPerks) => {
         
         //TODO: if not single perk and there are enough points random till one that can be aforded is picked.
         
@@ -61,7 +59,7 @@ class AllPerks extends Component {
                     /> 
                 </Modal>
 
-                <button onClick={this.randomPerkHandler}>Random</button>
+                <button onClick={this.randomPerkHandler.bind(this, Object.values(perkData))}>Random</button>
 
                 <PerkList 
                     data={Object.values(perkData)} 
