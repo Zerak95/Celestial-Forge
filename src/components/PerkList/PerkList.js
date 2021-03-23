@@ -11,14 +11,14 @@ const perkList = (props) => {
             return (
                 <Aux>
                     <li 
-                        key={item.perk.id} 
-                        onClick={props.clicked.bind(this, item.perk)} 
+                        key={item.id} 
+                        onClick={props.clicked.bind(this, item)} 
                     >
-                        {item.perk.name} / {item.perk.origin} ({item.perk.cost})
+                        {item.name} / {item.origin} ({item.cost})
                     </li>
                     <hr/>
                 </Aux>
-            )
+            );
         });
     }
 
