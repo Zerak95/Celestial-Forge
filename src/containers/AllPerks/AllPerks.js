@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 import Aux from '../../hoc/Aux';
 import Perk from '../../components/Perk/Perk';
-import perkData from '../../components/data/main-perks.json';
+// import perkData from '../../components/data/main-perks.json';
 import PerkList from '../../components/PerkList/PerkList';
 import Modal from '../../components/UI/Modal/Modal';
 import Backdrop from '../../components/UI/Backdrop/Backdrop';
 
 //TODO: delete this before launch [just for testing]
-// import perkData from '../../components/data/test.json';
+import perkData from '../../components/data/test.json';
 
 class AllPerks extends Component {
     state = {
@@ -25,8 +25,8 @@ class AllPerks extends Component {
         this.setState({selectedPerk: null, showPerk: false});
     }
 
-    randomPerkHandler = (listOfPerks) => {
-        
+    randomPerkHandler = (listOfPerks = Object.values(perkData)) => {
+
         //TODO: if not single perk and there are enough points random till one that can be aforded is picked.
         
         let randomPerk = listOfPerks[Math.floor(Math.random() * listOfPerks.length)];
@@ -59,7 +59,7 @@ class AllPerks extends Component {
                     /> 
                 </Modal>
 
-                <button onClick={this.randomPerkHandler.bind(this, Object.values(perkData))}>Random</button>
+                <button onClick={() => {this.randomPerkHandler()}}>Random</button>
 
                 <PerkList 
                     data={Object.values(perkData)} 
