@@ -1,7 +1,7 @@
 import React from 'react';
-import classes from './Perk.css';
-import Header from './Header/Header';
-import Aux from '../../hoc/Aux'
+// import classes from './Perk.css';
+// import Header from './Header/Header';
+// import Aux from '../../hoc/Aux'
 import SinglePerk from './SinglePerk';
 
 
