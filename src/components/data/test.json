@@ -1,0 +1,92 @@
+{
+    "toolkits1": {
+        "single_perk": true,
+        "share_origin": true,
+        "name": "Alchemy Machines",
+        "id": "toolkits1",
+        "origin": "SBURB",
+        "cost": 100,
+        "description": "These machines will be the basis for your use of Alchemy, with which you can create and combine a multitude of useful items throughout your time here, and perhaps beyond that... as long as you have Grist to pay for what you want to Make. Since these are necessary to even start your game, they're even free... beyond the cost in Grist to construct them of course. But if you want to spend some of your CP here, you can start with a fully upgraded variant, gaining every upgrade made to this equipment during the story of Homestuck immediately, without the cost of grist going up at all or having to spend time fiddling around to get them.",
+        "domain": "Toolkits",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1Z11GsF5LpsgQh-VpBimfNu0txomnETNR/view?usp=sharing",
+        "picture": "N/A"
+    },
+    "toolkits2": {
+        "single_perk": true,
+        "share_origin": true,
+        "name": "Alchemy Workshop",
+        "id": "toolkits2",
+        "origin": "Endless Legend",
+        "cost": 100,
+        "description": "Build into a wagon, this full-scale workshop allows for scientific research in the field, and provides all the tools the aspiring researcher needs to learn about the world they are in. Just don't blow yourself up or blind anyone, ok?",
+        "domain": "Toolkits",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1k4vmenrR2ImNQmoGT9BHzTe026OCgN6a/view?usp=sharing",
+        "picture": "N/A"
+    },
+    "alchemy23": {
+        "single_perk": false,
+        "share_origin": false,
+        "name": "Simple | Advanced | Alkahestry | Truth",
+        "id": "alchemy23",
+        "origin": "Full Metal Alchemist",
+        "cost": 1300,
+        "description": "",
+        "domain": "Alchemy",
+        "extra_perks": [
+            {
+                "single_perk": true,
+                "share_origin": false,
+                "name": "Simple Formulae",
+                "id": "alchemy23-a",
+                "origin": "Full Metal Alchemist",
+                "cost": 100,
+                "description": "You understand the connections between parts. You can make large alchemy circles far more easily and far less complex than others. You can combine this with Advanded Formulae for multipurpose combat alchemy.",
+                "domain": "Alchemy",
+                "jumpchain": "https://drive.google.com/file/d/12scJZTzS5xdJH4x__vC8CyGWBZAjyvnq/view?usp=sharing",
+                "picture": "N/A"
+            },
+            {
+                "single_perk": true,
+                "share_origin": false,
+                "name": "Advanced Formulae",
+                "id": "alchemy23-b",
+                "origin": "Full Metal Alchemist",
+                "cost": 100,
+                "description": "Alchemy comes to you as easily as breathing does. Your greater understanding allows you to perform more complex alchemy. you can combine this with Simplified Formulae for multipurpose combat alchemy.",
+                "domain": "Alchemy",
+                "jumpchain": "https://drive.google.com/file/d/12scJZTzS5xdJH4x__vC8CyGWBZAjyvnq/view?usp=sharing",
+                "picture": "N/A"
+            },
+            {
+                "single_perk": true,
+                "share_origin": false,
+                "name": "Alkahestry",
+                "id": "alchemy23-c",
+                "origin": "Full Metal Alchemist",
+                "cost": 300,
+                "description": "You understand how to perfom basic Alkahestry, an art from Xing wich can perform transmutation from a distance using linked circles, and can heal wounds of many kinds by following the pulse of the body. With practice or tutoring you can make a real skill from it.",
+                "domain": "Alchemy",
+                "jumpchain": "https://drive.google.com/file/d/12scJZTzS5xdJH4x__vC8CyGWBZAjyvnq/view?usp=sharing",
+                "picture": "N/A"
+            },
+            {
+                "single_perk": true,
+                "share_origin": false,
+                "name": "Truth",
+                "id": "alchemy23-d",
+                "origin": "Full Metal Alchemist",
+                "cost": 800,
+                "description": "Choose to lose either of the four. Your voice, your dominant hand, Your non-dominant arm, or your dominant arm. In return you gain the ability to perform alchemy without a transmutation circle and your knowledge of the science is expanded to the point where you have effectively mastered both simple and advanced Formulae.",
+                "domain": "Alchemy",
+                "jumpchain": "https://drive.google.com/file/d/12scJZTzS5xdJH4x__vC8CyGWBZAjyvnq/view?usp=sharing",
+                "picture": "N/A"
+            }
+        ],
+        "jumpchain": "https://drive.google.com/file/d/12scJZTzS5xdJH4x__vC8CyGWBZAjyvnq/view?usp=sharing",
+        "picture": "N/A"
+    }
+}

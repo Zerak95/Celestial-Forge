@@ -2,349 +2,368 @@
     "toolkits1": {
         "single_perk": true,
         "share_origin": true,
-        "perk" : {
-            "name": "Alchemy Machines",
-            "id": "toolkits1",
-            "origin": "SBURB",
-            "cost": 100,
-            "description": "These machines will be the basis for your use of Alchemy, with which you can create and combine a multitude of useful items throughout your time here, and perhaps beyond that... as long as you have Grist to pay for what you want to Make. Since these are necessary to even start your game, they're even free... beyond the cost in Grist to construct them of course. But if you want to spend some of your CP here, you can start with a fully upgraded variant, gaining every upgrade made to this equipment during the story of Homestuck immediately, without the cost of grist going up at all or having to spend time fiddling around to get them.",
-            "domain": "Toolkits",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/1Z11GsF5LpsgQh-VpBimfNu0txomnETNR/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Alchemy Machines",
+        "id": "toolkits1",
+        "origin": "SBURB",
+        "cost": 100,
+        "description": "These machines will be the basis for your use of Alchemy, with which you can create and combine a multitude of useful items throughout your time here, and perhaps beyond that... as long as you have Grist to pay for what you want to Make. Since these are necessary to even start your game, they're even free... beyond the cost in Grist to construct them of course. But if you want to spend some of your CP here, you can start with a fully upgraded variant, gaining every upgrade made to this equipment during the story of Homestuck immediately, without the cost of grist going up at all or having to spend time fiddling around to get them.",
+        "domain": "Toolkits",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1Z11GsF5LpsgQh-VpBimfNu0txomnETNR/view?usp=sharing",
+        "picture": "N/A"
     },
     "toolkits2": {
         "single_perk": true,
         "share_origin": true,
-        "perk" : {
-            "name": "Alchemy Workshop",
-            "id": "toolkits2",
-            "origin": "Endless Legend",
-            "cost": 100,
-            "description": "Build into a wagon, this full-scale workshop allows for scientific research in the field, and provides all the tools the aspiring researcher needs to learn about the world they are in. Just don't blow yourself up or blind anyone, ok?",
-            "domain": "Toolkits",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/1k4vmenrR2ImNQmoGT9BHzTe026OCgN6a/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Alchemy Workshop",
+        "id": "toolkits2",
+        "origin": "Endless Legend",
+        "cost": 100,
+        "description": "Build into a wagon, this full-scale workshop allows for scientific research in the field, and provides all the tools the aspiring researcher needs to learn about the world they are in. Just don't blow yourself up or blind anyone, ok?",
+        "domain": "Toolkits",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1k4vmenrR2ImNQmoGT9BHzTe026OCgN6a/view?usp=sharing",
+        "picture": "N/A"
     },
     "knowledge1": {
         "single_perk": true,
         "share_origin": false,
-        "perk" : {
-            "name": "Analysis",
-            "id": "knowledge1",
-            "origin": "Red Alert 3",
-            "cost": 100,
-            "description": "You can immediately identify any defects in hardware upon casual observation. This is effective on devices, Vehicles, and buildings.",
-            "domain": "Knowledge",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/1q3ZkXs8xFvS7BpTJ9BZexHo4lMT7ZwBd/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Analysis",
+        "id": "knowledge1",
+        "origin": "Red Alert 3",
+        "cost": 100,
+        "description": "You can immediately identify any defects in hardware upon casual observation. This is effective on devices, Vehicles, and buildings.",
+        "domain": "Knowledge",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1q3ZkXs8xFvS7BpTJ9BZexHo4lMT7ZwBd/view?usp=sharing",
+        "picture": "N/A"
     },
     "knowledge2": {
         "single_perk": true,
         "share_origin": true,
-        "perk" : {
-            "name": "Ancient Knowledge",
-            "id": "knowledge2",
-            "origin": "Mysterious Cities of Gold",
-            "cost": 100,
-            "description": "You know how to operate the devices left behind by the ancient solar empires – if you can find them.",
-            "domain": "Knowledge",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/1LWpFjMT9Y1bZmEoU76Zqdko92qoVZh36/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Ancient Knowledge",
+        "id": "knowledge2",
+        "origin": "Mysterious Cities of Gold",
+        "cost": 100,
+        "description": "You know how to operate the devices left behind by the ancient solar empires – if you can find them.",
+        "domain": "Knowledge",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1LWpFjMT9Y1bZmEoU76Zqdko92qoVZh36/view?usp=sharing",
+        "picture": "N/A"
     },
     "vehicles2": {
         "single_perk": true,
         "share_origin": false,
-        "perk" : {
-            "name": "Black Thumb",
-            "id": "vehicles2",
-            "origin": "Mad Max",
-            "cost": 100,
-            "description": "You have the skills of an expert mechanic, able to keep vehicles running even in the most inhospitable conditions. Repairing and tuning up engines is your bread and butter, even while they’re still operating. You also have a feel for how to upgrade cars in more esoteric ways; hey, it takes skill to add that many spikes and not hurt the handling!",
-            "domain": "Vehicles",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/1LQQhnDXVLSUyzDgFjanAa6GZQUobg4EW/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Black Thumb",
+        "id": "vehicles2",
+        "origin": "Mad Max",
+        "cost": 100,
+        "description": "You have the skills of an expert mechanic, able to keep vehicles running even in the most inhospitable conditions. Repairing and tuning up engines is your bread and butter, even while they’re still operating. You also have a feel for how to upgrade cars in more esoteric ways; hey, it takes skill to add that many spikes and not hurt the handling!",
+        "domain": "Vehicles",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1LQQhnDXVLSUyzDgFjanAa6GZQUobg4EW/view?usp=sharing",
+        "picture": "N/A"
     },
     "vehicles4": {
         "single_perk": true,
         "share_origin": true,
-        "perk" : {
-            "name": "Titan Engineering",
-            "id": "vehicles4",
-            "origin": "Titanfall",
-            "cost": 100,
-            "description": "Titans are incredibly complex machines, and due to the disposable nature of their use and production, and not designed for easy repair. You've got the deft touch though, and know exactly where to tweak and shore up the structure to keep it purring like it's fresh out of the drop pod for years.",
-            "domain": "Vehicles",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/10_JlHyoKjTT94NT0l1wKC3F2e6NrpAf8/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Titan Engineering",
+        "id": "vehicles4",
+        "origin": "Titanfall",
+        "cost": 100,
+        "description": "Titans are incredibly complex machines, and due to the disposable nature of their use and production, and not designed for easy repair. You've got the deft touch though, and know exactly where to tweak and shore up the structure to keep it purring like it's fresh out of the drop pod for years.",
+        "domain": "Vehicles",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/10_JlHyoKjTT94NT0l1wKC3F2e6NrpAf8/view?usp=sharing",
+        "picture": "N/A"
     },
     "time1": {
         "single_perk": true,
         "share_origin": true,
-        "perk" : {
-            "name": "Don't Need A Team",
-            "id": "time1",
-            "origin": "Ace Combat",
-            "cost": 100,
-            "description": "Fighter planes are pretty complicated machines, and more often than not you need a whole crew to maintain them so that they don’t break down in the middle of a fight and doom the pilot. You know your plane well enough to circumvent this issue. You've got just the right idea on what needs tuning up and what needs fixing, along with having the speed to be able to fix a plane up by yourself without the need for a crew in a fraction of the time. Performance issues are a thing of the past for you.",
-            "domain": "Time",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/1BV9C-L9RdSQVDkuDdp2y5pNxXH339fJd/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Don't Need A Team",
+        "id": "time1",
+        "origin": "Ace Combat",
+        "cost": 100,
+        "description": "Fighter planes are pretty complicated machines, and more often than not you need a whole crew to maintain them so that they don’t break down in the middle of a fight and doom the pilot. You know your plane well enough to circumvent this issue. You've got just the right idea on what needs tuning up and what needs fixing, along with having the speed to be able to fix a plane up by yourself without the need for a crew in a fraction of the time. Performance issues are a thing of the past for you.",
+        "domain": "Time",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1BV9C-L9RdSQVDkuDdp2y5pNxXH339fJd/view?usp=sharing",
+        "picture": "N/A"
     },
     "crafting1": {
         "single_perk": true,
         "share_origin": false,
-        "perk" : {
-            "name": "Bandit Gunsmith",
-            "id": "crafting1",
-            "origin": "Borderlands",
-            "cost": 100,
-            "description": "You have amazing technical insight and when shown to a pile of broken weapons or energy shields youcan use parts from some to reassemble others into decent condition. Don't expect it to be pretty, but you can nail 15 repeater pistols together to make a functional shotgun, or use bits of five shields to make one that works.",
-            "domain": "Crafting",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/19riTqof--_p5dfFJmRc7azAf--UTU7S4/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Bandit Gunsmith",
+        "id": "crafting1",
+        "origin": "Borderlands",
+        "cost": 100,
+        "description": "You have amazing technical insight and when shown to a pile of broken weapons or energy shields youcan use parts from some to reassemble others into decent condition. Don't expect it to be pretty, but you can nail 15 repeater pistols together to make a functional shotgun, or use bits of five shields to make one that works.",
+        "domain": "Crafting",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/19riTqof--_p5dfFJmRc7azAf--UTU7S4/view?usp=sharing",
+        "picture": "N/A"
     },
     "clothing4": {
         "single_perk": true,
-        "share_origin":false,
-        "perk" : {
-            "name": "Fashion",
-            "id": "clothing4",
-            "origin": "High School of the Dead",
-            "cost": 200,
-            "description": "Your clothing and entire body acquire defensive properties equal to the most superior protective items you have currently equipped. Emphasis on protective item­ an iron or steel ring won’t give you metal­tough skin­ the minimum is things like knee pads from extreme sports, helmets­ even an apron would count, though all that’d do is protect you from the dangers of a kitchen...",
-            "domain": "Clothing",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/1K-aRfrGcQeaXP0zQgt6JKJRRXK20NVUt/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "share_origin": false,
+        "name": "Fashion",
+        "id": "clothing4",
+        "origin": "High School of the Dead",
+        "cost": 200,
+        "description": "Your clothing and entire body acquire defensive properties equal to the most superior protective items you have currently equipped. Emphasis on protective item­ an iron or steel ring won’t give you metal­tough skin­ the minimum is things like knee pads from extreme sports, helmets­ even an apron would count, though all that’d do is protect you from the dangers of a kitchen...",
+        "domain": "Clothing",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1K-aRfrGcQeaXP0zQgt6JKJRRXK20NVUt/view?usp=sharing",
+        "picture": "N/A"
     },
     "magic1": {
         "single_perk": true,
         "share_origin": true,
-        "perk" : {
-            "name": "Inner Linings",
-            "id": "magic1",
-            "origin": "Final Fantasy XIV",
-            "cost": 100,
-            "description": "A customer came to you one day with a strange request for you to make a leather jacket which would be thinner, enough so that it would take multiple jackets to equal the bulk and weight of a normal jacket. As strange as that request was, when you watched him enchant the various jackets it suddenly made sense. Instead of trying to enchant a single jacket multiple times, he would wear multiple jackets enchanted once. But you can improve on that idea. Instead of attempting to craft multiple thinner jackets, you’ve opened up inner linings in existing pieces of work. As you predicted, while the ease of stacking enchantments has gone up, the overall durability of the item has dropped by a bit. Perhaps with time and better materials, you could rectify the second point. Having so many inner linings also helps quite a bit when it comes to deeper pockets, which is a nice side effect",
-            "domain": "Magic",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/1F-uEFbCyi-mMgqCwaPvFiQ-HrD9zq65m/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Inner Linings",
+        "id": "magic1",
+        "origin": "Final Fantasy XIV",
+        "cost": 100,
+        "description": "A customer came to you one day with a strange request for you to make a leather jacket which would be thinner, enough so that it would take multiple jackets to equal the bulk and weight of a normal jacket. As strange as that request was, when you watched him enchant the various jackets it suddenly made sense. Instead of trying to enchant a single jacket multiple times, he would wear multiple jackets enchanted once. But you can improve on that idea. Instead of attempting to craft multiple thinner jackets, you’ve opened up inner linings in existing pieces of work. As you predicted, while the ease of stacking enchantments has gone up, the overall durability of the item has dropped by a bit. Perhaps with time and better materials, you could rectify the second point. Having so many inner linings also helps quite a bit when it comes to deeper pockets, which is a nice side effect",
+        "domain": "Magic",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1F-uEFbCyi-mMgqCwaPvFiQ-HrD9zq65m/view?usp=sharing",
+        "picture": "N/A"
     },
     "magic2": {
         "single_perk": true,
         "share_origin": true,
-        "perk" : {
-            "name": "Artificer",
-            "id": "magic2",
-            "origin": "Masters of Magic",
-            "cost": 200,
-            "description": "You begin the game already knowing the magics to create enchanted items (other wizards can eventually acquire them) and artifacts. Additionally, these items cost half as much for you to make, and take half the time. This allows you to equip heros you hire in the early game. In future jumps, this will provide a slight boost to the creation time and a reduction to the creation cost of magical items.",
-            "domain": "Magic",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/1zKBELrxs0tm4pxaiLIfH2-OGc4wUZUMC/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Artificer",
+        "id": "magic2",
+        "origin": "Masters of Magic",
+        "cost": 200,
+        "description": "You begin the game already knowing the magics to create enchanted items (other wizards can eventually acquire them) and artifacts. Additionally, these items cost half as much for you to make, and take half the time. This allows you to equip heros you hire in the early game. In future jumps, this will provide a slight boost to the creation time and a reduction to the creation cost of magical items.",
+        "domain": "Magic",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1zKBELrxs0tm4pxaiLIfH2-OGc4wUZUMC/view?usp=sharing",
+        "picture": "N/A"
     },
     "quality4": {
         "single_perk": true,
         "share_origin": true,
-        "perk" : {
-            "name": "Bling of War",
-            "id": "quality4",
-            "origin": "Macross",
-            "cost": 100,
-            "description": "It's one thing to have a weapon or vehicle of mass destruction, capable of rending an entire ground force or a squadron to shame. It's another to make it look so damn good your enemies would not dare get near it if they had a lick of sense. By purchasing this perk, you can design your equipment to look much more stylish and carry a 'theme' you prefer. This can range from the clothes you wear, to the weapons you wield, to even the vehicles you pilot into battle. It's all about style.",
-            "domain": "Quality",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/1y674IkgtX6aC-8Pd3BkvcY_l4feGMjGM/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Bling of War",
+        "id": "quality4",
+        "origin": "Macross",
+        "cost": 100,
+        "description": "It's one thing to have a weapon or vehicle of mass destruction, capable of rending an entire ground force or a squadron to shame. It's another to make it look so damn good your enemies would not dare get near it if they had a lick of sense. By purchasing this perk, you can design your equipment to look much more stylish and carry a 'theme' you prefer. This can range from the clothes you wear, to the weapons you wield, to even the vehicles you pilot into battle. It's all about style.",
+        "domain": "Quality",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1y674IkgtX6aC-8Pd3BkvcY_l4feGMjGM/view?usp=sharing",
+        "picture": "N/A"
     },
     "size1": {
         "single_perk": true,
         "share_origin": true,
-        "perk" : {
-            "name": "Nanotech Wizard",
-            "id": "size1",
-            "origin": "Ratchet & Clank",
-            "cost": 200,
-            "description": "You acquire a basic understanding of the nanotech of this universe. Use it to fix yourself up when you get hurt, or use it on others. If integrated with weapons or armor, it gives them the capacity to upgrade over time and to potentially change their abilities.",
-            "domain": "Size",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/1xPpElHiC78IMnHI-E3YRcfVXPTjBznrS/view?usp=sharinghttps://drive.google.com/file/d/10gYwoKt1S0CK0lFtnKZ98ylDIhvLRdmH/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Nanotech Wizard",
+        "id": "size1",
+        "origin": "Ratchet & Clank",
+        "cost": 200,
+        "description": "You acquire a basic understanding of the nanotech of this universe. Use it to fix yourself up when you get hurt, or use it on others. If integrated with weapons or armor, it gives them the capacity to upgrade over time and to potentially change their abilities.",
+        "domain": "Size",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1xPpElHiC78IMnHI-E3YRcfVXPTjBznrS/view?usp=sharinghttps://drive.google.com/file/d/10gYwoKt1S0CK0lFtnKZ98ylDIhvLRdmH/view?usp=sharing",
+        "picture": "N/A"
     },
     "size4": {
         "single_perk": true,
         "share_origin": false,
-        "perk" : {
-            "name": "Tinkerer",
-            "id": "size4",
-            "origin": "RWBY",
-            "cost": 300,
-            "description": "You're a whiz at maintaining, modifying and making things. Everything from Sniper Scythes to Toaster Ovens, as long as you made it yourself or had the blueprints on hand. Unlock the secret of Variable Weapon Crafting.",
-            "domain": "Size",
-            "extra_perks": [
-                {
-                    "name": "Aura",
-                    "origin": "RWBY",
-                    "cost": 0,
-                    "description": "You start off with an unlocked aura."
-                },
-                {
-                    "name": "Dust",
-                    "origin": "RWBY",
-                    "cost": 0,
-                    "description": "Dust comes in four basic types: red fire, blue ice, green wind and yellow energy. They can be combined to make new variations.\n\nAfter this jump, small amounts of Dust will appear in the Warehouse weekly. Enough for a firefight or two at once. Dust augmentation is found to increase the effectiveness of weaponry and ammunition."
-                },
-                {
-                    "name": "Variable Weapon",
-                    "origin": "RWBY",
-                    "cost": 0,
-                    "description": "It's a thing that turns into another thing! One gun and one melee weapon, together at last."
-                },
-                {
-                    "name": "Scroll",
-                    "origin": "RWBY",
-                    "cost": 0,
-                    "description": "Think a smartphone, with terrible wilderness reception, video camera, messaging and more! Practically a passport for civilized society."
-                }
-            ],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/1ROAvzMdP2gND_gzctJN0hZZP9rak08Mv/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Tinkerer",
+        "id": "size4",
+        "origin": "RWBY",
+        "cost": 300,
+        "description": "You're a whiz at maintaining, modifying and making things. Everything from Sniper Scythes to Toaster Ovens, as long as you made it yourself or had the blueprints on hand. Unlock the secret of Variable Weapon Crafting.",
+        "domain": "Size",
+        "extra_perks": [
+            {
+                "name": "Aura",
+                "origin": "RWBY",
+                "cost": 0,
+                "description": "You start off with an unlocked aura."
+            },
+            {
+                "name": "Dust",
+                "origin": "RWBY",
+                "cost": 0,
+                "description": "Dust comes in four basic types: red fire, blue ice, green wind and yellow energy. They can be combined to make new variations.\n\nAfter this jump, small amounts of Dust will appear in the Warehouse weekly. Enough for a firefight or two at once. Dust augmentation is found to increase the effectiveness of weaponry and ammunition."
+            },
+            {
+                "name": "Variable Weapon",
+                "origin": "RWBY",
+                "cost": 0,
+                "description": "It's a thing that turns into another thing! One gun and one melee weapon, together at last."
+            },
+            {
+                "name": "Scroll",
+                "origin": "RWBY",
+                "cost": 0,
+                "description": "Think a smartphone, with terrible wilderness reception, video camera, messaging and more! Practically a passport for civilized society."
+            }
+        ],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1ROAvzMdP2gND_gzctJN0hZZP9rak08Mv/view?usp=sharing",
+        "picture": "N/A"
     },
     "resources1": {
         "single_perk": true,
         "share_origin": false,
-        "perk" : {
-            "name": "Acquester",
-            "id": "resources1",
-            "origin": "Spiral Knights",
-            "cost": 100,
-            "description": "In times of crisis and desperation, resources become too precious to use on anything other than necessities. The spiral Order has had to save all their supplies to repair their ship, so you've had to make do on the field. you know how to look for your own resources, remaining self-sufficient in the field through using scavanged items as supplies for anything ranging from simple maintenance to complex construction. Power Cores, Blighted Bones, or even Goo Drops can be used as spare parts or more. With what you've learnt, these days you don't just survive, you thrive. Whether it's machines that power the Constructs or the way that Wolver's fur burns, you've learned to figure out what separates useful resources from useless refuse. The world keeps spinning, knight. Keep up or die.",
-            "domain": "Resources",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/1xPpElHiC78IMnHI-E3YRcfVXPTjBznrS/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Acquester",
+        "id": "resources1",
+        "origin": "Spiral Knights",
+        "cost": 100,
+        "description": "In times of crisis and desperation, resources become too precious to use on anything other than necessities. The spiral Order has had to save all their supplies to repair their ship, so you've had to make do on the field. you know how to look for your own resources, remaining self-sufficient in the field through using scavanged items as supplies for anything ranging from simple maintenance to complex construction. Power Cores, Blighted Bones, or even Goo Drops can be used as spare parts or more. With what you've learnt, these days you don't just survive, you thrive. Whether it's machines that power the Constructs or the way that Wolver's fur burns, you've learned to figure out what separates useful resources from useless refuse. The world keeps spinning, knight. Keep up or die.",
+        "domain": "Resources",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1xPpElHiC78IMnHI-E3YRcfVXPTjBznrS/view?usp=sharing",
+        "picture": "N/A"
     },
     "resources2": {
         "single_perk": true,
         "share_origin": false,
-        "perk" : {
-            "name": "Composition Analysis",
-            "id": "resources2",
-            "origin": "Final Fantasy XIV",
-            "cost": 100,
-            "description": "\"Before you get to work, you need to know what it is you're dealing with!\" -that was the first lesson you were taught when you started this discipline. Certainly, your mentor was right. Without knowing what you're working with, you're simply courting with catastrophe. With a bit of help from the Aether tools you have, you can discern the properties of any material you're working with -enough to know if there's an occupational hazard involved with handling them. But with sufficient practice and a discerning eye, you can figure out what any item is made up of.",
-            "domain": "Resources",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/1F-uEFbCyi-mMgqCwaPvFiQ-HrD9zq65m/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Composition Analysis",
+        "id": "resources2",
+        "origin": "Final Fantasy XIV",
+        "cost": 100,
+        "description": "\"Before you get to work, you need to know what it is you're dealing with!\" -that was the first lesson you were taught when you started this discipline. Certainly, your mentor was right. Without knowing what you're working with, you're simply courting with catastrophe. With a bit of help from the Aether tools you have, you can discern the properties of any material you're working with -enough to know if there's an occupational hazard involved with handling them. But with sufficient practice and a discerning eye, you can figure out what any item is made up of.",
+        "domain": "Resources",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1F-uEFbCyi-mMgqCwaPvFiQ-HrD9zq65m/view?usp=sharing",
+        "picture": "N/A"
     },
     "magitech1": {
         "single_perk": true,
         "share_origin": false,
-        "perk" : {
-            "name": "Crystal Mechanics",
-            "id": "magitech1",
-            "origin": "Final Fantasy Type-0",
-            "cost": 100,
-            "description": "The ByakkoCrystal's blessing revolves around the synthesis and comprehension of technology using magic. After all, sufficiently advanced technology is no different from magic. You can understand the workings of advanced technology after tinkering around with it a bit. You can also replicate technology you seeby using magic, but until you've attempted it countless times, the end product always seems to feel a bit...lesser in comparison to the original.",
-            "domain": "Magitech",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/1QQTu0XjGd8BZ5nMGdX4_E0tQRs0r0tgN/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Crystal Mechanics",
+        "id": "magitech1",
+        "origin": "Final Fantasy Type-0",
+        "cost": 100,
+        "description": "The ByakkoCrystal's blessing revolves around the synthesis and comprehension of technology using magic. After all, sufficiently advanced technology is no different from magic. You can understand the workings of advanced technology after tinkering around with it a bit. You can also replicate technology you seeby using magic, but until you've attempted it countless times, the end product always seems to feel a bit...lesser in comparison to the original.",
+        "domain": "Magitech",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1QQTu0XjGd8BZ5nMGdX4_E0tQRs0r0tgN/view?usp=sharing",
+        "picture": "N/A"
     },
     "magitech2": {
         "single_perk": true,
         "share_origin": true,
-        "perk" : {
-            "name": "Magitek",
-            "id": "magitech2",
-            "origin": "Final Fantasy XIV",
-            "cost": 100,
-            "description": "Basic blueprints taken from our scouts in the Garlean Empire, these blueprints are marked for all sorts of military craft, ranging from battle suits to light cruisers. The problem of course, is that you’re going to have to find the right materials to make this in the first place –then there’s the matter of finding the ceruleum necessary to fuel it. The mechanics believe that it is possible to substitute ceruleum with another type of energy with sufficient charge, but you’ll have to tinker with the systems yourself in order to make that adaptation.",
-            "domain": "Magitech",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/1F-uEFbCyi-mMgqCwaPvFiQ-HrD9zq65m/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Magitek",
+        "id": "magitech2",
+        "origin": "Final Fantasy XIV",
+        "cost": 100,
+        "description": "Basic blueprints taken from our scouts in the Garlean Empire, these blueprints are marked for all sorts of military craft, ranging from battle suits to light cruisers. The problem of course, is that you’re going to have to find the right materials to make this in the first place –then there’s the matter of finding the ceruleum necessary to fuel it. The mechanics believe that it is possible to substitute ceruleum with another type of energy with sufficient charge, but you’ll have to tinker with the systems yourself in order to make that adaptation.",
+        "domain": "Magitech",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1F-uEFbCyi-mMgqCwaPvFiQ-HrD9zq65m/view?usp=sharing",
+        "picture": "N/A"
     },
     "alchemy1": {
         "single_perk": true,
         "share_origin": false,
-        "perk" : {
-            "name": "Alchemy",
-            "id": "alchemy1",
-            "origin": "Kingdoms of Amalur: Reckoning",
-            "cost": 100,
-            "description": "Your brothers and sisters in battle often need a health potion after a hard fight, and you have always been there to help out. You are a capable alchemist able to work with almost any ingredient to make potions with the effects you need, and find substitutes for absent ingredients. Some more potent potions still stump you, though, and inventing new recipes is beyond you.",
-            "domain": "Alchemy",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/1MJSaHBWk1BdNCKFNzvZBT_5gbvkkDXZs/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Alchemy",
+        "id": "alchemy1",
+        "origin": "Kingdoms of Amalur: Reckoning",
+        "cost": 100,
+        "description": "Your brothers and sisters in battle often need a health potion after a hard fight, and you have always been there to help out. You are a capable alchemist able to work with almost any ingredient to make potions with the effects you need, and find substitutes for absent ingredients. Some more potent potions still stump you, though, and inventing new recipes is beyond you.",
+        "domain": "Alchemy",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1MJSaHBWk1BdNCKFNzvZBT_5gbvkkDXZs/view?usp=sharing",
+        "picture": "N/A"
     },
     "alchemy2": {
         "single_perk": true,
         "share_origin": true,
-        "perk" : {
-            "name": "Alchemy Knowledge",
-            "id": "alchemy2",
-            "origin": "Golden Sun",
-            "cost": 100,
-            "description": "Alchemy was sealed long ago, but you've spent your entire life researching what little is left of its secrets, and the society of the ancients that used it. While mostly theory, this knowledge could serve you well should you seek out the ancient's settlements, or perhaps in greater ways in the years to come.",
-            "domain": "Alchemy",
-            "extra_perks": [],
-            "companion_perks": [],
-            "jumpchain": "https://drive.google.com/file/d/1e45GtImj5lg5xLGSmorng-Aza_o4L9CJ/view?usp=sharing",
-            "picture": "N/A"
-        }
+        "name": "Alchemy Knowledge",
+        "id": "alchemy2",
+        "origin": "Golden Sun",
+        "cost": 100,
+        "description": "Alchemy was sealed long ago, but you've spent your entire life researching what little is left of its secrets, and the society of the ancients that used it. While mostly theory, this knowledge could serve you well should you seek out the ancient's settlements, or perhaps in greater ways in the years to come.",
+        "domain": "Alchemy",
+        "extra_perks": [],
+        "companion_perks": [],
+        "jumpchain": "https://drive.google.com/file/d/1e45GtImj5lg5xLGSmorng-Aza_o4L9CJ/view?usp=sharing",
+        "picture": "N/A"
+    },
+    "alchemy23": {
+        "single_perk": false,
+        "share_origin": false,
+        "name": "Simple | Advanced | Alkahestry | Truth",
+        "id": "alchemy23",
+        "origin": "Full Metal Alchemist",
+        "cost": 1300,
+        "description": "",
+        "domain": "Alchemy",
+        "extra_perks": [
+            {
+                "single_perk": true,
+                "share_origin": false,
+                "name": "Simple Formulae",
+                "id": "alchemy23-a",
+                "origin": "Full Metal Alchemist",
+                "cost": 100,
+                "description": "You understand the connections between parts. You can make large alchemy circles far more easily and far less complex than others. You can combine this with Advanded Formulae for multipurpose combat alchemy.",
+                "domain": "Alchemy",
+                "jumpchain": "https://drive.google.com/file/d/12scJZTzS5xdJH4x__vC8CyGWBZAjyvnq/view?usp=sharing",
+                "picture": "N/A"
+            },
+            {
+                "single_perk": true,
+                "share_origin": false,
+                "name": "Advanced Formulae",
+                "id": "alchemy23-b",
+                "origin": "Full Metal Alchemist",
+                "cost": 100,
+                "description": "Alchemy comes to you as easily as breathing does. Your greater understanding allows you to perform more complex alchemy. you can combine this with Simplified Formulae for multipurpose combat alchemy.",
+                "domain": "Alchemy",
+                "jumpchain": "https://drive.google.com/file/d/12scJZTzS5xdJH4x__vC8CyGWBZAjyvnq/view?usp=sharing",
+                "picture": "N/A"
+            },
+            {
+                "single_perk": true,
+                "share_origin": false,
+                "name": "Alkahestry",
+                "id": "alchemy23-c",
+                "origin": "Full Metal Alchemist",
+                "cost": 300,
+                "description": "You understand how to perfom basic Alkahestry, an art from Xing wich can perform transmutation from a distance using linked circles, and can heal wounds of many kinds by following the pulse of the body. With practice or tutoring you can make a real skill from it.",
+                "domain": "Alchemy",
+                "jumpchain": "https://drive.google.com/file/d/12scJZTzS5xdJH4x__vC8CyGWBZAjyvnq/view?usp=sharing",
+                "picture": "N/A"
+            },
+            {
+                "single_perk": true,
+                "share_origin": false,
+                "name": "Truth",
+                "id": "alchemy23-d",
+                "origin": "Full Metal Alchemist",
+                "cost": 800,
+                "description": "Choose to lose either of the four. Your voice, your dominant hand, Your non-dominant arm, or your dominant arm. In return you gain the ability to perform alchemy without a transmutation circle and your knowledge of the science is expanded to the point where you have effectively mastered both simple and advanced Formulae.",
+                "domain": "Alchemy",
+                "jumpchain": "https://drive.google.com/file/d/12scJZTzS5xdJH4x__vC8CyGWBZAjyvnq/view?usp=sharing",
+                "picture": "N/A"
+            }
+        ],
+        "jumpchain": "https://drive.google.com/file/d/12scJZTzS5xdJH4x__vC8CyGWBZAjyvnq/view?usp=sharing",
+        "picture": "N/A"
     }
-    
-
-
 }
