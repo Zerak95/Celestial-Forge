@@ -1,4 +1,7 @@
 import React from 'react';
+import CatagoryItem from './CategoryItem.js/CategoryItem';
+
+//TODO: move into PerkList folder
 
 const category = (props) => {
 
@@ -28,6 +31,16 @@ const category = (props) => {
 
         console.log('categoryItems');
         console.log(categoryItems);
+
+        allPerks = Object.values(categoryItems).map(item => {
+            return(
+                <CatagoryItem 
+                name={item.name} 
+                perks={item.perks} 
+                clicked={props.clicked}
+                />
+            )
+        });
     }
 
     return(
