@@ -72,14 +72,15 @@ class AllPerks extends Component {
 
                 <button onClick={() => {this.randomPerkHandler()}}>Random</button>
 
-                <PerkList 
+                {/* <PerkList 
                     data={Object.values(perkData)} 
                     clicked={this.showFullPerkHandler}
-                />
+                /> */}
 
                 <Category 
                     data={Object.values(perkData)}
                     category={this.state.categories[0]}
+                    clicked={this.showFullPerkHandler}
                 />
 
             </Aux>

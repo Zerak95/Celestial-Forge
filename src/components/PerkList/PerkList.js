@@ -1,5 +1,5 @@
 import React from 'react';
-// import classes from './PerkList.css';
+import classes from './PerkList.css';
 import Aux from '../../hoc/Aux'
 
 
@@ -13,7 +13,7 @@ const perkList = (props) => {
                     <li 
                         key={item.id} 
                         // TODO: check if you should use bind or anonymous function
-                        onClick={props.clicked.bind(this, item)} 
+                        onClick={() => {props.clicked(item)}} 
                     >
                         {item.name} / {item.origin} ({item.cost})
                     </li>
@@ -24,7 +24,7 @@ const perkList = (props) => {
     }
 
     return (
-        <ul>
+        <ul className='PerkList' >
             {perkList}
         </ul>
     )
