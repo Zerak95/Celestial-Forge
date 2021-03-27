@@ -19,14 +19,21 @@ class AllPerks extends Component {
         categories: [
             {
                 name: 'domain',
-                //change later to account for lower case
+                //TODO: change to account for lower case
+                //TODO: change to look for domains in file?
+                //TODO: or add the rest of the domains
                 list: ['Toolkits','Knowledge','Vehicles','Time','Crafting',
                         'Clothing','Magic','Quality','Size','Resources',
                         'Magitech','Alchemy'
                     ]
+            },
+            {
+                name: 'cost',
+                list: [100,200,300,400,500,600,700,800,900,1000,1100,1200,1300]
             }
         ],
-        ascendingOrder: true
+        ascendingOrder: true,
+        viewCatagory: 0
     }
 
     showFullPerkHandler = (perk) => {
@@ -64,6 +71,10 @@ class AllPerks extends Component {
             this.setState({ascendingOrder: false});
         }    
     }
+
+    displayCategoryHandler = (event) => {
+        this.setState({viewCatagory: event.target.value});
+    }
     
     
     render () {
@@ -79,10 +90,17 @@ class AllPerks extends Component {
 
                 <button onClick={() => {this.randomPerkHandler()}}>Random</button>
 
-                <label for="order">Category order:</label>
+                <label for="order">Order: </label>
                 <select name="order" id="order" onChange={this.displayOrderHandler}>
                     <option value="ascending" >ascending</option>
                     <option value="descending">descending</option>
+                </select>
+
+                <label for="category">Category: </label>
+                <select name="category" id="category" onChange={this.displayCategoryHandler}>
+                    {/* TODO: automate this to look through categories*/}
+                    <option value={0} >domain</option>
+                    <option value={1}>cost</option>
                 </select>
 
                 {/* <PerkList 
@@ -92,7 +110,7 @@ class AllPerks extends Component {
 
                 <Category 
                     data={Object.values(perkData)}
-                    category={this.state.categories[0]}
+                    category={this.state.categories[this.state.viewCatagory]}
                     clicked={this.showFullPerkHandler}
                     ascendingOrder={this.state.ascendingOrder}
                 />
