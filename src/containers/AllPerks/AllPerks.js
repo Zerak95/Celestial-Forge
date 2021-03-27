@@ -2,19 +2,31 @@ import React, { Component } from 'react';
 
 import Aux from '../../hoc/Aux';
 import Perk from '../../components/Perk/Perk';
-// import perkData from '../../components/data/main-perks.json';
+import perkData from '../../components/data/main-perks.json';
 import PerkList from '../../components/PerkList/PerkList';
 import Modal from '../../components/UI/Modal/Modal';
 import Backdrop from '../../components/UI/Backdrop/Backdrop';
+import Category from '../../components/Perk/Category/Category';
 
 //TODO: delete this before launch [just for testing]
-import perkData from '../../components/data/test.json';
+// import perkData from '../../components/data/test.json';
 
 class AllPerks extends Component {
     state = {
         selectedPerk: null,
         showPerk: false,
-        currentCP: 800
+        currentCP: 800,
+        categories: [
+            {
+                name: 'domain',
+                //change later to account for lower case
+                list: ['Toolkits','Knowledge','Vehicles','Time','Crafting',
+                        'Clothing','Magic','Quality','Size','Resources',
+                        'Magitech','Alchemy'
+                    ]
+            }
+        ],
+        ascendingOrder: true
     }
 
     showFullPerkHandler = (perk) => {
@@ -45,7 +57,13 @@ class AllPerks extends Component {
         
     }
 
-    //TODO: fix display
+    displayOrderHandler = (event) => {
+        if (event.target.value == 'ascending') {
+            this.setState({ascendingOrder: true});
+        } else if (event.target.value == 'descending') {
+            this.setState({ascendingOrder: false});
+        }    
+    }
     
     
     render () {
@@ -61,9 +79,22 @@ class AllPerks extends Component {
 
                 <button onClick={() => {this.randomPerkHandler()}}>Random</button>
 
-                <PerkList 
+                <label for="order">Category order:</label>
+                <select name="order" id="order" onChange={this.displayOrderHandler}>
+                    <option value="ascending" >ascending</option>
+                    <option value="descending">descending</option>
+                </select>
+
+                {/* <PerkList 
                     data={Object.values(perkData)} 
                     clicked={this.showFullPerkHandler}
+                /> */}
+
+                <Category 
+                    data={Object.values(perkData)}
+                    category={this.state.categories[0]}
+                    clicked={this.showFullPerkHandler}
+                    ascendingOrder={this.state.ascendingOrder}
                 />
 
             </Aux>
