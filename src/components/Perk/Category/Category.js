@@ -9,8 +9,22 @@ const category = (props) => {
 
     let categoryItems = {};
 
+    const compare = (a,b) => {
+        let order = 1;
+
+        if (!props.ascendingOrder) {
+            order = -1;
+        }
+        if (a.name > b.name) {
+            return 1 * order;
+        } else if(a.name < b.name) {
+            return -1 * order;
+        }
+    }
+
 
     //TODO: tell user when the data is or undifined 
+    //TODO:change name to lowercase
     if(props.data !== null){
         props.category.list.forEach(element => {
             // let tempCategoryItems = {...categoryItems};
@@ -26,13 +40,24 @@ const category = (props) => {
             categoryItems[perk.domain].perks.push(perk);
         });
 
+
+
         // console.log('props.category');
         // console.log(props.category);
 
         console.log('categoryItems');
         console.log(categoryItems);
+        console.log('Object.values(categoryItems)');
+        console.log(Object.values(categoryItems));
 
-        allPerks = Object.values(categoryItems).map(item => {
+        categoryItems = Object.values(categoryItems);
+
+        categoryItems.sort(compare);
+
+        console.log('categoryItems');
+        console.log(categoryItems);
+
+        allPerks = categoryItems.map(item => {
             return(
                 <CatagoryItem 
                 name={item.name} 

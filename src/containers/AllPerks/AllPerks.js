@@ -25,7 +25,8 @@ class AllPerks extends Component {
                         'Magitech','Alchemy'
                     ]
             }
-        ]
+        ],
+        ascendingOrder: true
     }
 
     showFullPerkHandler = (perk) => {
@@ -56,7 +57,13 @@ class AllPerks extends Component {
         
     }
 
-    //TODO: fix display
+    displayOrderHandler = (event) => {
+        if (event.target.value == 'ascending') {
+            this.setState({ascendingOrder: true});
+        } else if (event.target.value == 'descending') {
+            this.setState({ascendingOrder: false});
+        }    
+    }
     
     
     render () {
@@ -72,6 +79,12 @@ class AllPerks extends Component {
 
                 <button onClick={() => {this.randomPerkHandler()}}>Random</button>
 
+                <label for="order">Category order:</label>
+                <select name="order" id="order" onChange={this.displayOrderHandler}>
+                    <option value="ascending" >ascending</option>
+                    <option value="descending">descending</option>
+                </select>
+
                 {/* <PerkList 
                     data={Object.values(perkData)} 
                     clicked={this.showFullPerkHandler}
@@ -81,6 +94,7 @@ class AllPerks extends Component {
                     data={Object.values(perkData)}
                     category={this.state.categories[0]}
                     clicked={this.showFullPerkHandler}
+                    ascendingOrder={this.state.ascendingOrder}
                 />
 
             </Aux>
