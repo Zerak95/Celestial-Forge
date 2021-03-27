@@ -6,8 +6,8 @@ import CatagoryItem from './CategoryItem.js/CategoryItem';
 const category = (props) => {
 
     let allPerks = null;
-
     let categoryItems = {};
+    const catagoryName = props.category.name;
 
     const compare = (a,b) => {
         let order = 1;
@@ -37,7 +37,7 @@ const category = (props) => {
         });
 
         props.data.forEach(perk => {
-            categoryItems[perk.domain].perks.push(perk);
+            categoryItems[perk[catagoryName]].perks.push(perk);
         });
 
 
