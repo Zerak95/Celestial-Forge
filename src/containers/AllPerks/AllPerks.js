@@ -32,6 +32,10 @@ class AllPerks extends Component {
                 name: 'cost',
                 // list: [100,200,300,400,500,600,700,800,900,1000,1100,1200,1300]
                 list: []
+            },
+            {
+                name: 'origin',
+                list: []
             }
         ],
         ascendingOrder: true,
@@ -112,6 +116,7 @@ class AllPerks extends Component {
                     {/* TODO: automate this to look through categories*/}
                     <option value={0} >domain</option>
                     <option value={1}>cost</option>
+                    <option value={2}>origin</option>
                 </select>
 
                 {/* <PerkList 
