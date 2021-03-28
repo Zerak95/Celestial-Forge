@@ -1,0 +1,17 @@
+// template
+
+,
+"": {
+    "single_perk": true,
+    "share_origin": false,
+    "name": "",
+    "id": "",
+    "origin": "",
+    "cost": 00,
+    "description": "",
+    "domain": "",
+    "extra_perks": [],
+    "companion_perks": [],
+    "jumpchain": "",
+    "picture": "N/A"
+}

@@ -1,0 +1,37 @@
+.Modal {
+    position: fixed;
+    z-index: 500;
+    background-color: white;
+    width: 70%;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    left: 15%;
+    top: 10%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+    max-height: 75%;
+    overflow: scroll;
+}
+
+#x {
+    position: fixed;
+    background: red;
+    color: white;
+    top: 0px;
+    right: 0px;
+    z-index: 600;
+
+    /* 
+    TODO: Fix this
+    top: -10px;
+    right: -10px; 
+    */
+}
+
+@media (min-width: 600px) {
+    .Modal {
+        width: 70%;
+        /* left: calc(50% - 250px); */
+    }
+}
