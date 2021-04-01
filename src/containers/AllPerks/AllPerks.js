@@ -34,7 +34,7 @@ class AllPerks extends Component {
         ],
         ascendingOrder: true,
         viewCatagory: 0,
-        displayOwnedPerks: false,
+        isDisplayOwnedPerks: false,
         ownedPerks: {}
     }
 
@@ -58,8 +58,14 @@ class AllPerks extends Component {
         
         if(typeof(randomPerk.single_perk) != "undefined" && !randomPerk.single_perk){
             this.randomPerkHandler(randomPerk.extra_perks);
-        }else{
+        } else if (this.state.isDisplayOwnedPerks && randomPerk.id in this.state.ownedPerks) {
+            this.randomPerkHandler();
+        } else{
             this.setState({selectedPerk: randomPerk, showPerk: true});
+
+            if (this.state.isDisplayOwnedPerks) {
+                this.addPerkToOwned(randomPerk);
+            }
         }
         
         //TODO: account for when there CP for perk is not enough
@@ -82,6 +88,9 @@ class AllPerks extends Component {
         let tempOwnedPerks = {...this.state.ownedPerks};
         tempOwnedPerks[perk.id] = perk;
         this.setState({ownedPerks: tempOwnedPerks});
+
+        console.log('tempOwnedPerks');
+        console.log(tempOwnedPerks);
     }
     
     
