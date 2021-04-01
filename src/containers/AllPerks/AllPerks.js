@@ -33,7 +33,9 @@ class AllPerks extends Component {
             }
         ],
         ascendingOrder: true,
-        viewCatagory: 0
+        viewCatagory: 0,
+        displayOwnedPerks: false,
+        ownedPerks: {}
     }
 
     showFullPerkHandler = (perk) => {
@@ -74,6 +76,12 @@ class AllPerks extends Component {
 
     displayCategoryHandler = (event) => {
         this.setState({viewCatagory: event.target.value});
+    }
+
+    addPerkToOwned = (perk) => {
+        let tempOwnedPerks = {...this.state.ownedPerks};
+        tempOwnedPerks[perk.id] = perk;
+        this.setState({ownedPerks: tempOwnedPerks});
     }
     
     
