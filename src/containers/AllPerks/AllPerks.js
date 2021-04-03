@@ -91,8 +91,19 @@ class AllPerks extends Component {
         this.setState({viewCatagory: event.target.value});
     }
 
+    addPerkToOwned = (perk) => {
+        let tempOwnedPerks = {...this.state.ownedPerks};
+        tempOwnedPerks[perk.id] = perk;
+        this.setState({ownedPerks: tempOwnedPerks});
+
+        console.log('tempOwnedPerks');
+        console.log(tempOwnedPerks);
+    }
+
     
     render () {
+
+        //TODO: refine this
         Object.values(this.state.categories).forEach(catagory => {
             if (catagory.list.length === 0) {
                 Object.values(perkData).forEach(perk => {
