@@ -36,6 +36,7 @@ class AllPerks extends Component {
             {
                 name: 'origin',
                 list: []
+
             }
         ],
         ascendingOrder: true,
@@ -81,7 +82,8 @@ class AllPerks extends Component {
     displayCategoryHandler = (event) => {
         this.setState({viewCatagory: event.target.value});
     }
-        
+
+    
     render () {
         Object.values(this.state.categories).forEach(catagory => {
             if (catagory.list.length === 0) {
@@ -117,6 +119,7 @@ class AllPerks extends Component {
                     <option value={0} >domain</option>
                     <option value={1}>cost</option>
                     <option value={2}>origin</option>
+
                 </select>
 
                 {/* <PerkList 
