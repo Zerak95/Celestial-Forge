@@ -25,7 +25,7 @@ const category = (props) => {
 
     //TODO: tell user when the data is or undifined 
     //TODO:change name to lowercase
-    if(props.data !== null){
+    if(props.data !== null && props.category.list.length !== 0){
         props.category.list.forEach(element => {
             // let tempCategoryItems = {...categoryItems};
             categoryItems[element] = {
@@ -45,17 +45,17 @@ const category = (props) => {
         // console.log('props.category');
         // console.log(props.category);
 
-        console.log('categoryItems');
-        console.log(categoryItems);
-        console.log('Object.values(categoryItems)');
-        console.log(Object.values(categoryItems));
+        // console.log('categoryItems');
+        // console.log(categoryItems);
+        // console.log('Object.values(categoryItems)');
+        // console.log(Object.values(categoryItems));
 
         categoryItems = Object.values(categoryItems);
 
         categoryItems.sort(compare);
 
-        console.log('categoryItems');
-        console.log(categoryItems);
+        // console.log('categoryItems');
+        // console.log(categoryItems);
 
         allPerks = categoryItems.map(item => {
             return(
