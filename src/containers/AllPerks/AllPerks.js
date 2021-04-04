@@ -42,8 +42,16 @@ class AllPerks extends Component {
         ascendingOrder: true,
         viewCatagory: 0,
         isDisplayOwnedPerks: false,
-        ownedPerks: {}
+        ownedPerks: {},
+        perksLeftToOwn: {}
     }
+
+    componentDidMount(){
+        console.log('componentDidMount()');
+        this.initialiseAllPerks();
+        this.initialiseOwnedPerks();
+    }
+
 
     showFullPerkHandler = (perk) => {
         this.setState({selectedPerk: perk, showPerk: true});
@@ -65,14 +73,8 @@ class AllPerks extends Component {
         
         if(typeof(randomPerk.single_perk) != "undefined" && !randomPerk.single_perk){
             this.randomPerkHandler(randomPerk.extra_perks);
-        } else if (this.state.isDisplayOwnedPerks && randomPerk.id in this.state.ownedPerks) {
-            this.randomPerkHandler();
-        } else{
+        }else{
             this.setState({selectedPerk: randomPerk, showPerk: true});
-
-            if (this.state.isDisplayOwnedPerks) {
-                this.addPerkToOwned(randomPerk);
-            }
         }
         
         //TODO: account for when there CP for perk is not enough
@@ -87,11 +89,11 @@ class AllPerks extends Component {
         }    
     }
 
-    displayCategoryHandler = (event) => {
+    displayCategoryHandler = event => {
         this.setState({viewCatagory: event.target.value});
     }
 
-    addPerkToOwned = (perk) => {
+    addPerkToOwned = perk => {
         let tempOwnedPerks = {...this.state.ownedPerks};
         tempOwnedPerks[perk.id] = perk;
         this.setState({ownedPerks: tempOwnedPerks});
@@ -100,9 +102,14 @@ class AllPerks extends Component {
         console.log(tempOwnedPerks);
     }
 
-    
-    render () {
+    initialiseOwnedPerks = () => {
+        //TODO: check if there is data in local storage
+        //TODO: delete owned perks
+        //TODO: delete perks the owner doesnt want to roll from
+        this.setState({perksLeftToOwn: perkData});
+    }
 
+    initialiseAllPerks = () => {
         //TODO: refine this
         Object.values(this.state.categories).forEach(catagory => {
             if (catagory.list.length === 0) {
@@ -113,6 +120,12 @@ class AllPerks extends Component {
                 });
             }
         });
+    }
+
+    
+    render () {
+
+        
 
         return(
             <Aux>
