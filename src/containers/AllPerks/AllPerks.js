@@ -43,7 +43,8 @@ class AllPerks extends Component {
         viewCatagory: 0,
         isDisplayOwnedPerks: true,
         ownedPerks: {},
-        perksLeftToOwn: {}
+        perksLeftToOwn: {},
+        isPerkOwned: false
     }
 
     componentDidMount(){
@@ -54,6 +55,10 @@ class AllPerks extends Component {
 
 
     showFullPerkHandler = (perk) => {
+        if (this.state.isDisplayOwnedPerks) {
+            this.checkIfOwnedPerk(perk);
+        }
+
         this.setState({selectedPerk: perk, showPerk: true});
     }
     
@@ -95,7 +100,7 @@ class AllPerks extends Component {
 
     processRandomPerk = randomPerk => {
         if (this.state.isDisplayOwnedPerks) {
-            this.addPerkToOwned(randomPerk);
+            this.addPerkToOwnedHandler(randomPerk);
         } else {
             this.setState({selectedPerk: randomPerk, showPerk: true});
         }
@@ -113,12 +118,13 @@ class AllPerks extends Component {
         this.setState({viewCatagory: event.target.value});
     }
 
-    addPerkToOwned = perk => {
+    addPerkToOwnedHandler = perk => {
         let tempOwnedPerks = {...this.state.ownedPerks};
         let tempPerksLeftToOwn = {...this.state.perksLeftToOwn};
 
         tempOwnedPerks[perk.id] = perk;
 
+        //TODO: change to if ('key' in myObj)
         if (typeof(perk.parentId) != "undefined") {
             tempPerksLeftToOwn[perk.parentId].extra_perks = 
                     tempPerksLeftToOwn[perk.parentId].extra_perks.filter(item => item.id !== perk.id);
@@ -132,6 +138,14 @@ class AllPerks extends Component {
 
         this.setState({ownedPerks: tempOwnedPerks, perksLeftToOwn: tempPerksLeftToOwn,
                             selectedPerk: perk, showPerk: true});
+    }
+
+    checkIfOwnedPerk = perk => {
+        if (perk.id in this.state.ownedPerks) {
+            this.setState({isPerkOwned: true});
+        } else {
+            this.setState({isPerkOwned: false});
+        }
     }
 
     initialiseOwnedPerks = () => {
@@ -166,6 +180,8 @@ class AllPerks extends Component {
                 <Modal show={this.state.showPerk} modalClosed={this.cancelFullPerkHandler}>   
                     <Perk
                         data={this.state.selectedPerk}
+                        isPerkOwned={this.state.isPerkOwned}
+                        addPerk={this.addPerkToOwnedHandler}
                     /> 
                 </Modal>
 
