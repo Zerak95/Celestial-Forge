@@ -142,7 +142,7 @@ class AllPerks extends Component {
         console.log(tempOwnedPerks);
         console.log('tempPerksLeftToOwn');
         console.log(tempPerksLeftToOwn);
-        console.log(perkData);
+        console.log('perkData');
         console.log(perkData);
 
         this.setState({ownedPerks: tempOwnedPerks, perksLeftToOwn: tempPerksLeftToOwn,
@@ -189,7 +189,7 @@ class AllPerks extends Component {
         //TODO: check if there is data in local storage
         //TODO: delete owned perks
         //TODO: delete perks the owner doesnt want to roll from
-        this.setState({perksLeftToOwn: {...perkData}});
+        this.setState({perksLeftToOwn: JSON.parse(JSON.stringify(perkData))});
     }
 
     initialiseAllPerks = () => {
