@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 
 import Aux from '../../hoc/Aux';
 import Perk from '../../components/Perk/Perk';
-import perkData from '../../components/data/main-perks.json';
+// import perkData from '../../components/data/main-perks.json';
 import PerkList from '../../components/PerkList/PerkList';
 import Modal from '../../components/UI/Modal/Modal';
 import Backdrop from '../../components/UI/Backdrop/Backdrop';
 import Category from '../../components/Perk/Category/Category';
 
 //TODO: delete this before launch [just for testing]
-// import perkData from '../../components/data/test.json';
+import perkData from '../../components/data/test.json';
 
 class AllPerks extends Component {
     state = {
@@ -40,8 +40,18 @@ class AllPerks extends Component {
             }
         ],
         ascendingOrder: true,
-        viewCatagory: 0
+        viewCatagory: 0,
+        isDisplayOwnedPerks: true,
+        ownedPerks: {},
+        perksLeftToOwn: {}
     }
+
+    componentDidMount(){
+        console.log('componentDidMount()');
+        this.initialiseAllPerks();
+        this.initialiseOwnedPerks();
+    }
+
 
     showFullPerkHandler = (perk) => {
         this.setState({selectedPerk: perk, showPerk: true});
@@ -51,27 +61,47 @@ class AllPerks extends Component {
         this.setState({selectedPerk: null, showPerk: false});
     }
 
-    randomPerkHandler = (listOfPerks = Object.values(perkData)) => {
+    randomPerkHandler = (ObjectOfPerks) => {
+        const arrayOfPerks = Object.values(ObjectOfPerks);
+        
+        if (arrayOfPerks.length === 0) {
+            alert('array is empty');
+            return;
+        }
+
 
         //TODO: if not single perk and there are enough points random till one that can be aforded is picked.
         
-        let randomPerk = listOfPerks[Math.floor(Math.random() * listOfPerks.length)];
+        let randomPerk = arrayOfPerks[Math.floor(Math.random() * arrayOfPerks.length)];
         
         if (typeof(randomPerk) == "undefined") {
+            console.log('typeof(randomPerk) == "undefined"');
+            console.log(arrayOfPerks);
             return;
         }
         
         if(typeof(randomPerk.single_perk) != "undefined" && !randomPerk.single_perk){
+            //TODO: might need to change tempate from extra_perks to something else
             this.randomPerkHandler(randomPerk.extra_perks);
         }else{
-            this.setState({selectedPerk: randomPerk, showPerk: true});
+            // console.log('this.processRandomPerk(randomPerk);');
+            this.processRandomPerk(randomPerk);
+            // this.setState({selectedPerk: randomPerk, showPerk: true});
         }
         
         //TODO: account for when there CP for perk is not enough
         
     }
 
-    displayOrderHandler = (event) => {
+    processRandomPerk = randomPerk => {
+        if (this.state.isDisplayOwnedPerks) {
+            this.addPerkToOwned(randomPerk);
+        } else {
+            this.setState({selectedPerk: randomPerk, showPerk: true});
+        }
+    } 
+
+    displayOrderHandler = event => {
         if (event.target.value == 'ascending') {
             this.setState({ascendingOrder: true});
         } else if (event.target.value == 'descending') {
@@ -79,12 +109,40 @@ class AllPerks extends Component {
         }    
     }
 
-    displayCategoryHandler = (event) => {
+    displayCategoryHandler = event => {
         this.setState({viewCatagory: event.target.value});
     }
 
-    
-    render () {
+    addPerkToOwned = perk => {
+        let tempOwnedPerks = {...this.state.ownedPerks};
+        let tempPerksLeftToOwn = {...this.state.perksLeftToOwn};
+
+        tempOwnedPerks[perk.id] = perk;
+
+        if (typeof(perk.parentId) != "undefined") {
+            tempPerksLeftToOwn[perk.parentId].extra_perks = 
+                    tempPerksLeftToOwn[perk.parentId].extra_perks.filter(item => item.id !== perk.id);
+
+            if(tempPerksLeftToOwn[perk.parentId].extra_perks.length === 0){
+                delete tempPerksLeftToOwn[perk.parentId];
+            }
+        }else{
+            delete tempPerksLeftToOwn[perk.id];
+        }
+
+        this.setState({ownedPerks: tempOwnedPerks, perksLeftToOwn: tempPerksLeftToOwn,
+                            selectedPerk: perk, showPerk: true});
+    }
+
+    initialiseOwnedPerks = () => {
+        //TODO: check if there is data in local storage
+        //TODO: delete owned perks
+        //TODO: delete perks the owner doesnt want to roll from
+        this.setState({perksLeftToOwn: perkData});
+    }
+
+    initialiseAllPerks = () => {
+        //TODO: refine this
         Object.values(this.state.categories).forEach(catagory => {
             if (catagory.list.length === 0) {
                 Object.values(perkData).forEach(perk => {
@@ -94,6 +152,12 @@ class AllPerks extends Component {
                 });
             }
         });
+    }
+
+    
+    render () {
+
+        
 
         return(
             <Aux>
@@ -105,7 +169,13 @@ class AllPerks extends Component {
                     /> 
                 </Modal>
 
-                <button onClick={() => {this.randomPerkHandler()}}>Random</button>
+                <button onClick={() => {
+                        if (this.state.isDisplayOwnedPerks) {
+                            this.randomPerkHandler(this.state.perksLeftToOwn);
+                        }else{
+                            this.randomPerkHandler(perkData);
+                        }
+                    }}>Random</button>
 
                 <label for="order">Order: </label>
                 <select name="order" id="order" onChange={this.displayOrderHandler}>
@@ -119,7 +189,6 @@ class AllPerks extends Component {
                     <option value={0} >domain</option>
                     <option value={1}>cost</option>
                     <option value={2}>origin</option>
-
                 </select>
 
                 {/* <PerkList 
