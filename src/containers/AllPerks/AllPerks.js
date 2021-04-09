@@ -44,7 +44,7 @@ class AllPerks extends Component {
         isDisplayOwnedPerks: true,
         ownedPerks: {},
         perksLeftToOwn: {},
-        isPerkOwned: false
+        // isPerkOwned: false
     }
 
     componentDidMount(){
@@ -58,7 +58,7 @@ class AllPerks extends Component {
 
     showFullPerkHandler = (perk) => {
         if (this.state.isDisplayOwnedPerks) {
-            this.checkIfOwnedPerk(perk);
+            this.checkIfOwnedPerkHandler(perk);
         }
 
         this.setState({selectedPerk: perk, showPerk: true});
@@ -140,10 +140,10 @@ class AllPerks extends Component {
 
         console.log('tempOwnedPerks');
         console.log(tempOwnedPerks);
-        console.log('tempPerksLeftToOwn');
-        console.log(tempPerksLeftToOwn);
-        console.log('perkData');
-        console.log(perkData);
+        // console.log('tempPerksLeftToOwn');
+        // console.log(tempPerksLeftToOwn);
+        // console.log('perkData');
+        // console.log(perkData);
 
         this.setState({ownedPerks: tempOwnedPerks, perksLeftToOwn: tempPerksLeftToOwn,
                             selectedPerk: perk, showPerk: true});
@@ -170,18 +170,20 @@ class AllPerks extends Component {
 
         console.log('tempOwnedPerks');
         console.log(tempOwnedPerks);
-        console.log('tempPerksLeftToOwn');
-        console.log(tempPerksLeftToOwn);
+        // console.log('tempPerksLeftToOwn');
+        // console.log(tempPerksLeftToOwn);
 
         this.setState({ownedPerks: tempOwnedPerks, perksLeftToOwn: tempPerksLeftToOwn,
                             selectedPerk: perk, showPerk: true});
     }
 
-    checkIfOwnedPerk = perk => {
+    checkIfOwnedPerkHandler = perk => {
         if (perk.id in this.state.ownedPerks) {
-            this.setState({isPerkOwned: true});
+            // this.setState({isPerkOwned: true});
+            return true;
         } else {
-            this.setState({isPerkOwned: false});
+            // this.setState({isPerkOwned: false});
+            return false;
         }
     }
 
@@ -217,7 +219,7 @@ class AllPerks extends Component {
                 <Modal show={this.state.showPerk} modalClosed={this.cancelFullPerkHandler}>   
                     <Perk
                         data={this.state.selectedPerk}
-                        isPerkOwned={this.state.isPerkOwned}
+                        checkIfPerkOwned={this.checkIfOwnedPerkHandler}
                         addPerk={this.addPerkToOwnedHandler}
                         removePerk={this.removePerkFromOwnedHandler}
                     /> 
