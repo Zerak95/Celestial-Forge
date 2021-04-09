@@ -53,6 +53,8 @@ class AllPerks extends Component {
         this.initialiseOwnedPerks();
     }
 
+    //TODO: reload if a perk is added to list of owned. and on owned page??
+
 
     showFullPerkHandler = (perk) => {
         if (this.state.isDisplayOwnedPerks) {
@@ -136,6 +138,41 @@ class AllPerks extends Component {
             delete tempPerksLeftToOwn[perk.id];
         }
 
+        console.log('tempOwnedPerks');
+        console.log(tempOwnedPerks);
+        console.log('tempPerksLeftToOwn');
+        console.log(tempPerksLeftToOwn);
+        console.log(perkData);
+        console.log(perkData);
+
+        this.setState({ownedPerks: tempOwnedPerks, perksLeftToOwn: tempPerksLeftToOwn,
+                            selectedPerk: perk, showPerk: true});
+    }
+
+    removePerkFromOwnedHandler = perk => {
+        let tempOwnedPerks = {...this.state.ownedPerks};
+        let tempPerksLeftToOwn = {...this.state.perksLeftToOwn};
+
+        tempPerksLeftToOwn[perk.id] = perk;
+
+        //TODO: change to if ('key' in myObj)
+        if (typeof(perk.parentId) != "undefined") {
+            if (!(perk.parentId in tempPerksLeftToOwn)) {
+                tempPerksLeftToOwn[perk.parentId] = perkData[perk.parentId];
+                tempPerksLeftToOwn[perk.parentId].extra_perks = [];
+            } 
+
+            tempPerksLeftToOwn[perk.parentId].extra_perks.push(perk);
+
+        }
+            delete tempOwnedPerks[perk.id];
+        
+
+        console.log('tempOwnedPerks');
+        console.log(tempOwnedPerks);
+        console.log('tempPerksLeftToOwn');
+        console.log(tempPerksLeftToOwn);
+
         this.setState({ownedPerks: tempOwnedPerks, perksLeftToOwn: tempPerksLeftToOwn,
                             selectedPerk: perk, showPerk: true});
     }
@@ -152,7 +189,7 @@ class AllPerks extends Component {
         //TODO: check if there is data in local storage
         //TODO: delete owned perks
         //TODO: delete perks the owner doesnt want to roll from
-        this.setState({perksLeftToOwn: perkData});
+        this.setState({perksLeftToOwn: {...perkData}});
     }
 
     initialiseAllPerks = () => {
@@ -182,6 +219,7 @@ class AllPerks extends Component {
                         data={this.state.selectedPerk}
                         isPerkOwned={this.state.isPerkOwned}
                         addPerk={this.addPerkToOwnedHandler}
+                        removePerk={this.removePerkFromOwnedHandler}
                     /> 
                 </Modal>
 
