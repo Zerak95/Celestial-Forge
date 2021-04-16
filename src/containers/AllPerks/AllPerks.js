@@ -43,14 +43,24 @@ class AllPerks extends Component {
         viewCatagory: 0,
         isDisplayOwnedPerks: true,
         ownedPerks: {},
-        perksLeftToOwn: {},
         // isPerkOwned: false
+        perksLeftToOwn: {},
+        // perkListToDisplay [1: all, 2: to own, 3: owned]
+        perkListToDisplay: Object.values(perkData)
     }
 
     componentDidMount(){
         console.log('componentDidMount()');
         this.initialiseAllPerks();
         this.initialiseOwnedPerks();
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        return nextProps.show !== this.props.show;
+    }
+
+    componentDidUpdate(){
+        this.listOfPerksToDisplay(props.)
     }
 
     //TODO: reload if a perk is added to list of owned. and on owned page??
@@ -156,6 +166,7 @@ class AllPerks extends Component {
         tempPerksLeftToOwn[perk.id] = perk;
 
         //TODO: change to if ('key' in myObj)
+        //TODO: acount for cp when removing
         if (typeof(perk.parentId) != "undefined") {
             if (!(perk.parentId in tempPerksLeftToOwn)) {
                 tempPerksLeftToOwn[perk.parentId] = perkData[perk.parentId];
@@ -207,7 +218,20 @@ class AllPerks extends Component {
         });
     }
 
-    
+    listOfPerksToDisplay = (listNumber) => {
+        //TODO: make more efficient
+        let listToDisplay = Object.values(perkData);
+        
+        if (listNumber === 2) {
+            listToDisplay = this.state.perksLeftToOwn;
+        } else if (listNumber === 3) {
+            listToDisplay = this.state.ownedPerks;
+        }
+
+        this.setState({perkListToDisplay: listToDisplay})
+    }
+
+
     render () {
 
         
