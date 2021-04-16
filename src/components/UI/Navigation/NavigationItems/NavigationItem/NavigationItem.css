@@ -1,0 +1,20 @@
+.NavigationItem{
+    background-color: mediumblue;
+    border: 1px solid black;
+    margin: 10px 5px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.NavigationItem a {
+    /* text-decoration: none; */
+    /* width: 100%;
+    box-sizing: border-box;
+    display: block; */
+
+    display: block;
+    /* color: white; */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
