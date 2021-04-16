@@ -25,7 +25,7 @@ class App extends Component {
   
         </div>
         <Layout>
-          <AllPerks/>
+          <AllPerks perkList={this.state.perkListToDisplay} />
           {/* <Perk 
             name='Tinkerer'
             origin='RWBY'

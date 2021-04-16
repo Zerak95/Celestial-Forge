@@ -60,7 +60,7 @@ class AllPerks extends Component {
     }
 
     componentDidUpdate(){
-        this.listOfPerksToDisplay(props.)
+        this.listOfPerksToDisplay(this.props.perkList);
     }
 
     //TODO: reload if a perk is added to list of owned. and on owned page??
@@ -277,7 +277,7 @@ class AllPerks extends Component {
                 /> */}
 
                 <Category 
-                    data={Object.values(perkData)}
+                    data={this.state.perkListToDisplay}
                     category={this.state.categories[this.state.viewCatagory]}
                     clicked={this.showFullPerkHandler}
                     ascendingOrder={this.state.ascendingOrder}
