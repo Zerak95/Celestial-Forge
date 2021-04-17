@@ -7,7 +7,7 @@ import classes from './Layout.css';
 const layout = (props) => {
     return (
         <Aux>
-            <NavBar/>
+            <NavBar listToDisplay={props.listToDisplay} />
             <main className='Content'>
                 {props.children}
             </main>

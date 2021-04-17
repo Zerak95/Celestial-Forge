@@ -46,26 +46,33 @@ class AllPerks extends Component {
         // isPerkOwned: false
         perksLeftToOwn: {},
         // perkListToDisplay [1: all, 2: to own, 3: owned]
-        perkListToDisplay: Object.values(perkData)
+        perkListToDisplay: 1
     }
 
     componentDidMount(){
         console.log('componentDidMount()');
         this.initialiseAllPerks();
         this.initialiseOwnedPerks();
+        this.listOfPerksToDisplay();
     }
 
-    shouldComponentUpdate(nextProps, nextState) {
-        return nextProps.show !== this.props.show;
-    }
+    // shouldComponentUpdate(nextProps, nextState) {
+    //     console.log('!!!!!!!perkList !== this.props.perkList');
+    //     console.log(nextProps.perkList !== this.props.perkList);
+    //     return nextProps.perkList !== this.props.perkList;
+    // }
 
-    componentDidUpdate(){
-        this.listOfPerksToDisplay(this.props.perkList);
+    componentDidUpdate(prevProps, prevState){
+        console.log("@@@@@@@componentDidUpdate is called");
+        if (prevProps.perkList !== this.props.perkList) {
+            this.setState({perkListToDisplay: this.props.perkList});
+        }
     }
+    
 
     //TODO: reload if a perk is added to list of owned. and on owned page??
 
-
+    //TODO: fix add and remove button
     showFullPerkHandler = (perk) => {
         if (this.state.isDisplayOwnedPerks) {
             this.checkIfOwnedPerkHandler(perk);
@@ -148,22 +155,26 @@ class AllPerks extends Component {
             delete tempPerksLeftToOwn[perk.id];
         }
 
-        console.log('tempOwnedPerks');
-        console.log(tempOwnedPerks);
+        // console.log('tempOwnedPerks');
+        // console.log(tempOwnedPerks);
         // console.log('tempPerksLeftToOwn');
         // console.log(tempPerksLeftToOwn);
         // console.log('perkData');
         // console.log(perkData);
 
         this.setState({ownedPerks: tempOwnedPerks, perksLeftToOwn: tempPerksLeftToOwn,
-                            selectedPerk: perk, showPerk: true});
+                            selectedPerk: perk, showPerk: true,
+                            selectedPerk: this.state.ownedPerks[perk.id]});
+        
+        // this.requestUpdate();
     }
 
     removePerkFromOwnedHandler = perk => {
         let tempOwnedPerks = {...this.state.ownedPerks};
         let tempPerksLeftToOwn = {...this.state.perksLeftToOwn};
+        let tempId = perk.id;
 
-        tempPerksLeftToOwn[perk.id] = perk;
+        
 
         //TODO: change to if ('key' in myObj)
         //TODO: acount for cp when removing
@@ -174,9 +185,13 @@ class AllPerks extends Component {
             } 
 
             tempPerksLeftToOwn[perk.parentId].extra_perks.push(perk);
+            tempId = perk.parentId;
 
+        }else{
+            tempPerksLeftToOwn[perk.id] = perk;
         }
-            delete tempOwnedPerks[perk.id];
+
+        delete tempOwnedPerks[perk.id];
         
 
         console.log('tempOwnedPerks');
@@ -185,7 +200,8 @@ class AllPerks extends Component {
         // console.log(tempPerksLeftToOwn);
 
         this.setState({ownedPerks: tempOwnedPerks, perksLeftToOwn: tempPerksLeftToOwn,
-                            selectedPerk: perk, showPerk: true});
+                            selectedPerk: perk, showPerk: true,
+                            selectedPerk: this.state.perksLeftToOwn[tempId]});
     }
 
     checkIfOwnedPerkHandler = perk => {
@@ -218,23 +234,31 @@ class AllPerks extends Component {
         });
     }
 
-    listOfPerksToDisplay = (listNumber) => {
+    listOfPerksToDisplay = () => {
+        // console.log('listOfPerksToDisplay is called');
         //TODO: make more efficient
-        let listToDisplay = Object.values(perkData);
+        let listToDisplay;
         
-        if (listNumber === 2) {
-            listToDisplay = this.state.perksLeftToOwn;
-        } else if (listNumber === 3) {
-            listToDisplay = this.state.ownedPerks;
+        if (this.state.perkListToDisplay === 1) {
+            listToDisplay = Object.values(perkData);
+        } else if (this.state.perkListToDisplay === 2) {
+            listToDisplay = Object.values(this.state.perksLeftToOwn);
+        } else if (this.state.perkListToDisplay === 3) {
+            listToDisplay = Object.values(this.state.ownedPerks);
         }
 
-        this.setState({perkListToDisplay: listToDisplay})
+        return listToDisplay;
+        
+        // console.log('listToDisplay');
+        // console.log(listToDisplay);
+        // this.setState({perkListToDisplay: listToDisplay});
     }
 
 
     render () {
 
-        
+        console.log('this.state');        
+        console.log(this.state);        
 
         return(
             <Aux>
@@ -277,11 +301,13 @@ class AllPerks extends Component {
                 /> */}
 
                 <Category 
-                    data={this.state.perkListToDisplay}
+                    data={this.listOfPerksToDisplay()}
                     category={this.state.categories[this.state.viewCatagory]}
                     clicked={this.showFullPerkHandler}
                     ascendingOrder={this.state.ascendingOrder}
                 />
+                {/* {console.log('$$$$$$$ this.state $$$$$$$$')}
+                {console.log(this.state)} */}
 
             </Aux>
         );

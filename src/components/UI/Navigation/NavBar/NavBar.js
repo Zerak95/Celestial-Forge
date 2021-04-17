@@ -4,7 +4,7 @@ import classes from './NavBar.css';
 
 const navBar = (props) => (
     <nav className='NavBar'>
-        <NavigationItems/>
+        <NavigationItems listToDisplay={props.listToDisplay} />
     </nav>
 );
 

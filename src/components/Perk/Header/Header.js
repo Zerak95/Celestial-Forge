@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+//TODO: move to UI folder
 const header = (props) => {
 
     const style = {

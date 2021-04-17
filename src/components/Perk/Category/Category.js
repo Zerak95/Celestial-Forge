@@ -5,6 +5,9 @@ import CatagoryItem from './CategoryItem.js/CategoryItem';
 
 const category = (props) => {
 
+    // console.log('const category = (props)');
+    // console.log(props);
+    
     let allPerks = null;
     let categoryItems = {};
     const catagoryName = props.category.name;
@@ -36,6 +39,9 @@ const category = (props) => {
             // categoryItems = tempCategoryItems;
         });
 
+        // console.log('@@@@@@@@@@################');
+        // console.log('props');
+        // console.log(props);
         props.data.forEach(perk => {
             categoryItems[perk[catagoryName]].perks.push(perk);
         });

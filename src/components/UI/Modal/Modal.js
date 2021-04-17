@@ -10,6 +10,7 @@ class Modal extends Component {
         return nextProps.show !== this.props.show;
     }
 
+    //TODO: remove componentWillUpdate()
     componentWillUpdate() {
         console.log('[Modal] WillUpdate');
     }

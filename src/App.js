@@ -10,13 +10,13 @@ import AllPerks from './containers/AllPerks/AllPerks';
 
 class App extends Component {
   state = {
-      perkListToDisplay: 1
+    perkListToDisplay: 1
   }
 
   listOfPerksToDisplayHandler = listNumber => {
-      if (listNumber !== this.state.perkListToDisplay) {
-          this.setState({perkListToDisplay:listNumber});
-      }
+    if (listNumber !== this.state.perkListToDisplay) {
+        this.setState({perkListToDisplay:listNumber});
+    }
   }
   render () {
     return (
@@ -24,7 +24,7 @@ class App extends Component {
         <div>
   
         </div>
-        <Layout>
+        <Layout listToDisplay={this.listOfPerksToDisplayHandler} >
           <AllPerks perkList={this.state.perkListToDisplay} />
           {/* <Perk 
             name='Tinkerer'
